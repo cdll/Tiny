@@ -6,7 +6,4 @@ const tiny= new Tiny({
   ,replace: true
 })
 console.info(tiny)
-const fr = document.createDocumentFragment()
-const app = document.querySelector('app')
-tiny.mount(app, tiny)
-// app.parentElement.replaceChild(fr, app)
+tiny.mount('app', tiny)
